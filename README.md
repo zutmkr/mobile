@@ -5,6 +5,7 @@ Mobilne: Ionic (angular)
 * Podleś
 * Czerwornka
 * Gaczyński 
+* Jasiewicz
 
 Frontend: (angular lub react)
 * Sobisz

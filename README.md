@@ -1,7 +1,7 @@
 Rozdzielenie GRUP:
 
 Mobilne: Ionic (angular)
-* Lubtowski
+* Luptowski
 * Podleś
 * Czerwornka
 * Gaczyński 

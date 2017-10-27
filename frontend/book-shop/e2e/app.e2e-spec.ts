@@ -1,14 +1,17 @@
-import { AppPage } from './app.po';
+import { StoreFrontPageObject } from "./store-front.page-object";
 
-describe('book-shop App', () => {
-  let page: AppPage;
+describe("Store front", () => {
+  let page: StoreFrontPageObject;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new StoreFrontPageObject();
   });
 
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+  it("should display products", async () => {
+    await page.navigateTo();
+    const products = await page.getProducts();
+    expect(products.length).toEqual(5);
+    expect(products[0].name).toEqual("Greens");
+    expect(products[0].price).toEqual(3.5);
   });
 });

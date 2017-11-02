@@ -1,0 +1,53 @@
+<div class="row">
+<!--  <div class="medium-3 columns text-center">
+    <img src="./assets/{{product.id}}.jpg"
+                   class="product_image"/> 
+
+            </div>-->
+  <div class="medium-9 columns">
+
+    <h4>
+
+      <span class="text--bold js-product-name" [innerHtml]="'BOOK_ELEMENT.TITLE' | translate: {val:bookElement.title}"></span>
+      <small class="product_price js-product-price" [innerHtml]="'BOOK_ELEMENT.PRICE' | translate:{val: bookElement.price | currency:'GBP':true }"></small> 
+
+    </h4>
+
+    <p class="js-product-desc" [innerHtml]=" 'BOOK_ELEMENT.AUTHOR' | translate:{ val: bookElement.author } "></p>
+    
+    <p class="js-product-desc" [innerHtml]=" 'BOOK_ELEMENT.COUNTRY' | translate:{ val: bookElement.country } "></p>
+
+    <p class="js-product-desc" [innerHtml]=" 'BOOK_ELEMENT.LANG' | translate:{ val: bookElement.language } "></p>
+
+    <p class="js-product-desc" [innerHtml]=" 'BOOK_ELEMENT.PAGES' | translate:{ val: bookElement.pages } "></p>
+
+    <p class="js-product-desc" [innerHtml]=" 'BOOK_ELEMENT.YEAR' | translate:{ val: bookElement.year } "></p>
+
+    <p class="js-product-desc" [innerHtml]=" 'BOOK_ELEMENT.LINK' | translate:{ val:bookElement.link }"></p>
+              
+              <!--
+              <p>
+
+                public author: string;
+    public country:  string;
+    public language: string;
+    public link:   string;
+    public title:    string;
+
+    public pages:  number;
+    public year:   number;
+
+    public price:    string;
+                <button type="button"
+                        class="button success large js-btn-add"
+                        (click)="addProductToCart(product, 1)">Add To Cart</button>
+                <button type="button"
+                        class="button small js-btn-remove"
+                        *ngIf="productInCart(product) | async"
+                        (click)="removeProductFromCart(product, 1)">Remove item from cart</button>
+              </p>
+              -->
+
+  </div>
+
+</div>

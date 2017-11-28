@@ -1,7 +1,23 @@
 <div>
     <div class="row">
         <div>
-            <h1>ADMIN</h1>
+            <h1>ADMIN PANEL</h1>
         </div>
     </div>
+  <ul>
+        <li>
+            <a routerLink="dashboard" href="/">Dashboard</a>
+        </li>
+        <li>
+            <a routerLink="books" href="/">Books</a>
+        </li>
+        <li>
+            <a routerLink="users" href="/">Users</a>
+        </li>
+    </ul>
+
+  <div>
+    <router-outlet></router-outlet>
+   </div>
+
 </div>

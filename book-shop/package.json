@@ -30,8 +30,14 @@
     "core-js": "^2.4.1",
     "intl": "^1.2.5",
     "node-sass": "^4.5.2",
-    "rxjs": "^5.1.0",
-    "zone.js": "^0.8.4"
+    "rxjs": "^5.5.2",
+    "zone.js": "^0.8.4",
+    "@ngrx/effects": "4.1.1",
+    "@ngrx/router-store": "4.1.1",
+    "@ngrx/store": "4.1.1",
+    "@ngrx/store-devtools": "4.1.1",
+    "reselect": "^2.5.4",
+    "ngrx-store-freeze": "0.2.0"
   },
   "devDependencies": {
     "@angular/cli": "1.0.2",
@@ -55,6 +61,6 @@
     "sinon": "^2.2.0",
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
-    "typescript": "~2.2.0"
+    "typescript": "~2.3.3"
   }
 }
